@@ -1,0 +1,15 @@
+/* ============================================= */
+/*                      Flex                     */
+/* ============================================= */
+
+.head-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #7477bf;
+    color: white;
+}
+.head-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
