@@ -405,6 +405,10 @@ main {
   grid-area: main;
   background-color: pink;
 }
+main .dash-header {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+}
 
 @media (max-width: 320px) {
   .grid-container {
@@ -430,7 +434,7 @@ main {
   font-size: 30px;
 }
 .head-container .border-left {
-  border-left: solid 2px #a2a5bd;
+  border-left: solid 2px #cccccc;
   padding-left: 15px;
 }
 .head-container .head-item {
@@ -455,6 +459,30 @@ main {
     padding: 9px;
   }
 }
+/* ============================================= */
+/*                      Main                     */
+/* ============================================= */
+main {
+  background-color: white;
+}
+main .grey-tab {
+  background-color: #f7f7f7;
+  border-bottom: #cccccc solid 3px;
+}
+main h2.dash-tab {
+  background-color: white;
+  width: 180px;
+  padding: 15px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-right: #cccccc solid 3px;
+}
+main .alert {
+  background-color: #7477bf;
+  color: white;
+}
+
 .nav-ul {
   list-style: none;
   padding-left: 0;

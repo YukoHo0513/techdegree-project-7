@@ -21,6 +21,10 @@ nav {
 main {
     grid-area: main;
     background-color: pink;
+    .dash-header {
+        display: grid;
+        grid-template-columns: 1fr 7fr;
+    }
 }
 
 @media (max-width: 320px) {
@@ -33,3 +37,6 @@ main {
         "main";
     }
 }
+
+
+

@@ -1,0 +1,26 @@
+/* ============================================= */
+/*                      Main                     */
+/* ============================================= */
+
+main {
+    background-color: $white;
+    .grey-tab {
+        background-color: $bg-color;
+        border-bottom: $border-grey solid 3px;
+    }
+    h2.dash-tab {
+        background-color: $white;
+        width: 180px;
+        padding: 15px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        border-right: $border-grey solid 3px;
+    }
+    .alert {
+        background-color: $main-purple;
+        color: $white;
+    }
+}
+
+
