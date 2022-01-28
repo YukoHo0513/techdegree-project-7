@@ -23,4 +23,22 @@ main {
     }
 }
 
+/* ============================================= */
+/*            Traffic Section                    */
+/* ============================================= */
 
+section.traffic {
+    padding: 0 15px;
+}
+
+.traffic-hd {
+    display: flex;
+    justify-content: space-between;
+}
+.traffic-ul {
+    list-style: none;
+}
+.traffic-ul li {
+    display: inline;
+    padding-left: 20px;
+}
