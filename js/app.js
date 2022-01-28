@@ -55,6 +55,11 @@ const moreData = [{
           suggestedMin: 0,
           // suggestedMax: 2500
         }
+      },
+      plugins: {
+        legend: {
+          display: false
+      }
       }
     }
   };
@@ -69,20 +74,28 @@ const moreData = [{
   ul.addEventListener('click', (e) => {
     if (e.target.tagName === 'LI') {
       const clickedLi = e.target;
+      const lis = ul.children;
+      for (let i = 0; i < lis.length; i++) {
+        lis[i].classList.remove("active");
+      }
       let myChartArr = myChart.config._config.data.datasets;
       if (clickedLi.className === 'li-d') {
+        clickedLi.classList.add('active');
         myChartArr.shift();
         myChartArr.push(moreData[0]);
         myChart.update();
       } else if (clickedLi.className === 'li-w') {
+        clickedLi.classList.add('active');
         myChartArr.shift();
         myChartArr.push(moreData[1]);
         myChart.update();
       } else if (clickedLi.className === 'li-m') {
+        clickedLi.classList.add('active');
         myChartArr.shift();
         myChartArr.push(moreData[2]);
         myChart.update();
       } else if (clickedLi.className === 'li-h') {
+        clickedLi.classList.add('active');
         myChartArr.shift();
         myChartArr.push(hourlyChart);
         myChart.update();

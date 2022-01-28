@@ -493,6 +493,7 @@ section.traffic {
 .traffic-hd {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .traffic-ul {
@@ -501,7 +502,15 @@ section.traffic {
 
 .traffic-ul li {
   display: inline;
-  padding-left: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #81c98f;
+  border-radius: 20px;
+  color: white;
+  padding: 10px;
 }
 
 .nav-ul {
