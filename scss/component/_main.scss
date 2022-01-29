@@ -6,16 +6,18 @@ main {
     background-color: $white;
     .grey-tab {
         background-color: $bg-color;
-        border-bottom: $border-grey solid 3px;
+        border-bottom: $border-grey solid 1.5px;
     }
     h2.dash-tab {
         background-color: $white;
-        width: 180px;
+        width: 120px;
         padding: 15px;
         text-align: center;
         margin-top: 0;
         margin-bottom: 0;
-        border-right: $border-grey solid 3px;
+        border-right: $border-grey solid 1.5px;
+        font-size: 18px;
+        font-weight: 380;
     }
     .alert {
         background-color: $main-purple;
@@ -23,54 +25,122 @@ main {
     }
 }
 
+@media (min-width: 768px) {
+    main {
+        .grey-tab {
+            border-bottom: $border-grey solid 3px;
+        }
+        h2.dash-tab {
+            border-right: $border-grey solid 3px;
+            width: 180px;
+            font-size: 25px;
+            // font-weight: 380;    
+        }
+    }
+}
+
 /* ============================================= */
 /*            Traffic Section                    */
 /* ============================================= */
 
-section.traffic {
+section {
     padding: 0 15px;
+    border-bottom: $border-grey solid 1.5px;
+    .traffic-hd {
+        display: block;
+        margin-top: 20px;
+    }
+    .traffic-ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        padding-left: 0;
+    }
+    .traffic-ul li {
+        display: inline;
+        margin-left: 10px;
+        cursor: pointer;
+        padding: 10px;
+    }
+    .active {
+        background-color:#81c98f;
+        border-radius: 20px;
+        color: $white;
+        padding: 10px;
+    }
 }
 
-.traffic-hd {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-.traffic-ul {
-    list-style: none;
-}
-.traffic-ul li {
-    display: inline;
-    margin-left: 20px;
-    cursor: pointer;
-
-}
-.active {
-    background-color:#81c98f;
-    border-radius: 20px;
-    color: $white;
-    padding: 10px;
+@media (min-width: 768px) {
+    section {
+        padding-bottom: 30px;
+        border-bottom: $border-grey solid 3px;    
+        .traffic-ul {
+            font-size: 20px;
+        }
+        .traffic-hd {
+            display: flex;
+            justify-content: space-between;
+        }
+        .traffic-ul li {
+            margin-left: 20px;
+        }
+        .traffic-title {
+            padding: 10px;
+        }
+    }
 }
 
 /* ============================================= */
-/*            Social Stats Section               */
+/*            Social Status Section              */
 /* ============================================= */
 
-.social-text p:first-child {
-    color: $primary-blue;
-    font-weight: 400;
-    font-size: 25px;
-    margin-top: 15px;
-    margin-bottom: 0;
-}
-.social-text p:last-child {
-    font-size: 40px;
-    margin-top: 0;
-    color: #777777;
+.social-text {
+    padding-top: 25px;
+    p:first-child {
+        color: $primary-blue;
+        font-weight: 400;
+        font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+    p:last-child {
+        font-size: 40px;
+        margin-top: 0;
+        color: #777777;
+    }
 }
 .social-container {
     display: flex;
+    align-items: center;
     background: $bg-color;
     border: 2.3px solid $border-grey;
     border-radius: 10px;
+    margin-bottom: 15px;
+    height: 100px;
+}
+
+@media (min-width: 768px) {
+    .social-text {
+        padding-top: 0;
+        p:first-child {
+            font-size: 25px;
+        }
+    }
+    .social-container {
+        margin-bottom: 0;
+        align-items: initial;
+    }
+}
+/* ============================================= */
+/*             New Members Section               */
+/* ============================================= */
+
+.members-container {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .members-container {
+        display: flex;
+    }
 }

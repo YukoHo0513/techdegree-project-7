@@ -7,40 +7,38 @@
     justify-content: space-between;
     background-color: $main-purple;
     color: $white;
-    span {
-        font-size: 20px;
-        padding-left: 15px;
-    }
     h1 {
-        font-size: 30px;
+        font-size: 20px;
     }
-    .border-left {
-        border-left: solid 2px $border-grey;
-        padding-left: 15px;
+    span {
+        font-size: 12px;
     }
     .head-item {
+        padding: 9px;
         display: flex;
         align-items: center;
-        padding: 15px;
     }
+    .border-left {
+        border-left: solid 1.5px $border-grey;
+        padding-left: 8px;
+    }
+
 }
 
-@media (max-width: 320px) {
+@media (min-width: 768px) {
     .head-container {
-        h1 {
-            font-size: 20px;
-        }
         span {
-            font-size: 12px;
+            font-size: 20px;
+            padding-left: 15px;
         }
-        .profile-img {
-            width: 35px;
-            height: 35px;
-            padding: 0;
+        h1 {
+            font-size: 30px;
         }
         .head-item {
-            padding: 9px;
+            padding: 15px;
         }
-
+        .border-left {
+            padding-left: 15px;
+        }
     }
 }
