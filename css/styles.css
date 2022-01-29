@@ -376,6 +376,21 @@ template {
   text-decoration: none;
 }
 
+.social-icon {
+  width: 50px;
+  height: 50px;
+  background: #7477bf;
+  fill: white;
+  padding: 9px;
+  border-radius: 50%;
+}
+
+.social-image {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
 @media (max-width: 320px) {
   .bell {
     width: 30px;
@@ -408,6 +423,14 @@ main {
 main .dash-header {
   display: grid;
   grid-template-columns: 1fr 7fr;
+}
+
+.social-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px;
+  grid-column-gap: 15px;
+  grid-auto-rows: minmax(100px, auto);
 }
 
 @media (max-width: 320px) {
@@ -511,6 +534,30 @@ section.traffic {
   border-radius: 20px;
   color: white;
   padding: 10px;
+}
+
+/* ============================================= */
+/*            Social Stats Section               */
+/* ============================================= */
+.social-text p:first-child {
+  color: #7477bf;
+  font-weight: 400;
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.social-text p:last-child {
+  font-size: 40px;
+  margin-top: 0;
+  color: #777777;
+}
+
+.social-container {
+  display: flex;
+  background: #f7f7f7;
+  border: 2.3px solid #cccccc;
+  border-radius: 10px;
 }
 
 .nav-ul {

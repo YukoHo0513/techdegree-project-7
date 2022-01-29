@@ -27,6 +27,14 @@ main {
     }
 }
 
+.social-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-column-gap: 15px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
 
 @media (max-width: 320px) {
     .grid-container {

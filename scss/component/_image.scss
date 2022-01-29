@@ -18,14 +18,25 @@
     height: 60px;
     border-radius: 50%;
 }
-
 .nav-icons {
     fill: $white;
     width: 35px;
     height: 35px;
     text-decoration: none;
 }
-
+.social-icon {
+    width: 50px;
+    height: 50px;
+    background: $primary-blue;
+    fill: $white;
+    padding: 9px;
+    border-radius: 50%;
+}
+.social-image {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
 @media (max-width: 320px) {
     .bell {
         width: 30px;
