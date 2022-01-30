@@ -385,6 +385,7 @@ h3 {
   border-radius: 50%;
   width: 60px;
   height: 60px;
+  margin: auto 0;
 }
 
 .victoria-img {
@@ -449,7 +450,6 @@ nav {
 
 main {
   grid-area: main;
-  background-color: pink;
 }
 main .dash-header {
   display: grid;
@@ -462,6 +462,21 @@ main .dash-header {
     grid-template-columns: 1fr 12fr;
     grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
     grid-template-areas: "header header" "nav main";
+  }
+
+  .traffic-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "traffic traffic" "daily mobile";
+  }
+  .traffic-grid-container .traffic {
+    grid-area: traffic;
+  }
+  .traffic-grid-container .daily {
+    grid-area: daily;
+  }
+  .traffic-grid-container .mobile {
+    grid-area: mobile;
   }
 
   .social-wrap {
@@ -578,6 +593,10 @@ section .active {
   padding: 10px;
 }
 
+.mobile .widget-container-half {
+  height: 200px;
+}
+
 @media (min-width: 768px) {
   section {
     padding-bottom: 30px;
@@ -595,6 +614,15 @@ section .active {
   }
   section .traffic-title {
     padding: 10px;
+  }
+
+  .daily {
+    border-right: 3px solid #cccccc;
+  }
+
+  .mobile .widget-container-half {
+    height: 350px;
+    margin: 0 auto;
   }
 }
 /* ============================================= */
@@ -647,10 +675,39 @@ section .active {
 }
 
 @media (min-width: 768px) {
+  .members-text {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   .members-container {
     display: flex;
   }
 }
+/* ============================================= */
+/*               Message User                    */
+/* ============================================= */
+.message input, .message textarea {
+  width: 100%;
+  background: #f7f7f7;
+  border: 2.3px solid #cccccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+.message input::placeholder, .message textarea::placeholder {
+  color: #cccccc;
+}
+.message button {
+  width: 100%;
+  background: #7477bf;
+  color: white;
+  border-radius: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 2.3px solid #cccccc;
+}
+
 /* ============================================= */
 /*                  Navigation                   */
 /* ============================================= */

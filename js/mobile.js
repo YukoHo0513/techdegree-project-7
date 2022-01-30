@@ -23,8 +23,10 @@ const mobileConfig = {
         plugins: {
           legend: {
             position: 'right'
-        }
-        }
+          }
+        },
+        responsive: true,
+        maintainAspectRatio: false
       }
 };
 

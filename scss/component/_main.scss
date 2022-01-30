@@ -69,6 +69,9 @@ section {
         padding: 10px;
     }
 }
+.mobile .widget-container-half{
+    height: 200px;
+}
 
 @media (min-width: 768px) {
     section {
@@ -87,6 +90,14 @@ section {
         .traffic-title {
             padding: 10px;
         }
+        
+    }
+    .daily {
+        border-right: 3px solid $border-grey;
+    }
+    .mobile .widget-container-half{
+        height: 350px;
+        margin: 0 auto;
     }
 }
 
@@ -135,12 +146,45 @@ section {
 /*             New Members Section               */
 /* ============================================= */
 
+
 .members-container {
     display: block;
+    
 }
-
 @media (min-width: 768px) {
+    .members-text {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
     .members-container {
         display: flex;
     }
+}
+
+/* ============================================= */
+/*               Message User                    */
+/* ============================================= */
+
+.message {
+    input, textarea {
+        width: 100%;
+        background: $bg-color;
+        border: 2.3px solid $border-grey;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 15px;
+    }
+    input::placeholder, textarea::placeholder {
+        color: $border-grey;
+    }
+    button {
+        width: 100%;
+        background: $primary-blue;
+        color: $white;
+        border-radius: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 2.3px solid $border-grey;
+    }
+
 }
