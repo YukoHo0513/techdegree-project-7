@@ -22,6 +22,15 @@ main {
     .alert {
         background-color: $main-purple;
         color: $white;
+        width: 90%;
+        border-radius: 10px;
+        padding: 0 15px;
+        margin: 0 auto;
+        margin-top: 15px;
+        .alert-banner {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }
 
@@ -34,7 +43,10 @@ main {
             border-right: $border-grey solid 3px;
             width: 180px;
             font-size: 25px;
-            // font-weight: 380;    
+        }
+        .alert {
+            width: 95%;
+
         }
     }
 }
@@ -83,6 +95,7 @@ section {
         .traffic-hd {
             display: flex;
             justify-content: space-between;
+            margin-top: 0;
         }
         .traffic-ul li {
             margin-left: 20px;

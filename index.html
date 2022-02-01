@@ -210,9 +210,9 @@
             <section class="message">
                 <h3>MESSAGE USER</h3>
                 <form action="submit" class="widget-container">
-                    <input type="text" name="user" placeholder="Search for User">
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message for User"></textarea>
-                    <button type="submit">SEND</button>
+                    <input type="text" name="user" placeholder="Search for User" id="search_user">
+                    <textarea name="message" id="message_user" cols="30" rows="10" placeholder="Message for User"></textarea>
+                    <button type="submit" id="send-button">SEND</button>
                 </form>
             </section>
             <section class="settings">
@@ -222,9 +222,9 @@
                     <label class="switch-light switch-ios" onclick="">                
                         <input type="checkbox">
                         <span>
-                        <span>OFF</span>
-                        <span>ON</span>
-                        <a></a>
+                            <span>OFF</span>
+                            <span>ON</span>
+                            <a></a>
                         </span>
                     </label>
                 </div>
@@ -262,5 +262,7 @@
     <script src="js/line_chart.js"></script>
     <script src="js/daily.js"></script>
     <script src="js/mobile.js"></script>
+    <script src="js/alert.js"></script>
+    <script src="js/message.js"></script>
 </body>
 </html>

@@ -574,6 +574,15 @@ main h2.dash-tab {
 main .alert {
   background-color: #7477bf;
   color: white;
+  width: 90%;
+  border-radius: 10px;
+  padding: 0 15px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+main .alert .alert-banner {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (min-width: 768px) {
@@ -584,6 +593,9 @@ main .alert {
     border-right: #cccccc solid 3px;
     width: 180px;
     font-size: 25px;
+  }
+  main .alert {
+    width: 95%;
   }
 }
 /* ============================================= */
@@ -631,6 +643,7 @@ section .active {
   section .traffic-hd {
     display: flex;
     justify-content: space-between;
+    margin-top: 0;
   }
   section .traffic-ul li {
     margin-left: 20px;
