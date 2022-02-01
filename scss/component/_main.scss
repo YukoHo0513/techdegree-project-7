@@ -96,7 +96,7 @@ section {
         border-right: 3px solid $border-grey;
     }
     .mobile .widget-container-half{
-        height: 350px;
+        height: 200px;
         margin: 0 auto;
     }
 }
@@ -134,7 +134,11 @@ section {
     .social-text {
         padding-top: 0;
         p:first-child {
-            font-size: 25px;
+            font-size: 18px;
+            margin-top: 19px;
+        }
+        p:last-child {
+            font-size: 35px;
         }
     }
     .social-container {
@@ -143,21 +147,67 @@ section {
     }
 }
 /* ============================================= */
-/*             New Members Section               */
+/*         New Members & Activity Section        */
 /* ============================================= */
-
 
 .members-container {
     display: block;
-    
-}
-@media (min-width: 768px) {
-    .members-text {
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: $border-grey solid 1.8px;
+    p {
         margin-top: 0;
         margin-bottom: 0;
     }
+}
+.members-container:last-child {
+    border-bottom: none;
+}
+.members-text {
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    a {
+        text-decoration: none;
+        color: $primary-blue;
+    }
+}
+.activity p.right-align {
+    display: none;
+    color: $dark-grey;
+    font-size: 25px;
+}
+
+@media (min-width: 768px) {
+    .members, .activity {
+        padding-bottom: 0;
+    }    
     .members-container {
         display: flex;
+        justify-content: space-between;
+        border-bottom: $border-grey solid 2.3px;
+        .right-align {
+            padding-top: 15px;
+        }
+    }
+    .members-text {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: left;
+        margin-left: 17px;
+        padding-top: 15px;
+        flex: 1;
+    }
+    .activity p.right-align {
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) {
+    .members {
+        border-right: solid $border-grey 2.3px;
     }
 }
 
@@ -166,6 +216,7 @@ section {
 /* ============================================= */
 
 .message {
+    padding-bottom: 15px;
     input, textarea {
         width: 100%;
         background: $bg-color;
@@ -187,4 +238,101 @@ section {
         border: 2.3px solid $border-grey;
     }
 
+}
+
+@media (min-width: 1024px) {
+    .message {
+        border-right: solid $border-grey 2.3px;
+    }
+}
+
+/* ============================================= */
+/*                   Settings                    */
+/* ============================================= */
+
+.setting-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+.switch-light {
+    width: 30%;
+    margin-top: 9px;
+    span {
+        span {
+            text-align: left;
+            padding-left: 15px;
+        }
+    }
+}
+.switch-ios.switch-light a {
+    width: 21px;
+    height: 21px;
+    border: 1.5px solid $border-grey;
+    top: 2px;
+}
+.settings {
+    padding-bottom: 15px;
+    select {
+        width: 100%;
+        background: $bg-color;
+        border: 2.3px solid $border-grey;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        button {
+            border: $border-grey 2px solid;
+            border-radius: 10px;
+            padding: 10px;
+            width: 48%;
+            color: $white;
+        }
+        button:first-child {
+            background: $primary-blue;
+        }
+        button:last-child {
+            background: #999999;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .setting-container {
+        width: 40%;
+        justify-content: space-between;
+    }
+    .switch-light {
+        width: 20%;
+    }
+    .settings {
+        .buttons button {
+            width: 49%;
+        }
+    }
+    .switch-ios.switch-light a {
+        border: 2px solid $border-grey;
+    }
+}
+
+@media (min-width: 1024px) {
+    .setting-container {
+        width: initial;
+        padding-bottom: 20px;
+    }
+    .settings {
+        .buttons button {
+            padding: 15px;
+            border: solid $border-grey 2.3px;
+        }
+        select {
+            padding: 15px;
+        }
+        .select-buttons {
+            margin-top: 92px;
+        }
+    }
 }

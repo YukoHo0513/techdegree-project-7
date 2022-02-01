@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/toggle-switch.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
@@ -134,7 +135,7 @@
                 </div>
             </div>
         </section>
-        <div class="mem-act">
+        <div class="final-grid">
             <section class="members">
                 <h3>NEW MEMBERS</h3>
                 <div class="members-container">
@@ -143,7 +144,7 @@
                         <p>Victoria Chambers</p>
                         <a href="#">victoria.chambers80@example.com</a>
                     </div>
-                    <p>10/15/20</p>
+                    <p class="right-align">10/15/20</p>
                 </div>
                 <div class="members-container">
                     <img src="images/member-2.jpg" alt="Dale's profile photo" class="profile-image">
@@ -151,7 +152,7 @@
                         <p>Dale Byrd</p>
                         <a href="#">dale.byrd52@example.com</a>
                     </div>
-                    <p>10/15/20</p>
+                    <p class="right-align">10/15/20</p>
                 </div>
                 <div class="members-container">
                     <img src="images/member-3.jpg" alt="dawn's profile photo" class="profile-image">
@@ -159,7 +160,7 @@
                         <p>Dawn Wood</p>
                         <a href="#">dawn.wood16@example.com</a>
                     </div>
-                    <p>10/15/20</p>
+                    <p class="right-align">10/15/20</p>
                 </div>
                 <div class="members-container">
                     <img src="images/member-4.jpg" alt="Dan's profile photo" class="profile-image">
@@ -167,7 +168,7 @@
                         <p>Dan Oliver</p>
                         <a href="#">dan.oliver82@example.com</a>
                     </div>
-                    <p>10/15/20</p>
+                    <p class="right-align">10/15/20</p>
                 </div>
             </section>
             <section class="activity">
@@ -178,6 +179,7 @@
                         <p>Victoria Chambers commented on <strong>WebApp's SEO Tips</strong></p>
                         <p>4 hours ago</p>
                     </div>
+                    <p class="right-align">&gt;</p>
                 </div>
                 <div class="members-container">
                     <img src="images/member-2.jpg" alt="Dale's profile photo" class="profile-image">
@@ -185,6 +187,7 @@
                         <p>Dale Byrd liked the post <strong>Facebook's Changes for 2021</strong></p>
                         <p>5 hours ago</p>
                     </div>
+                    <p class="right-align">&gt;</p>
                 </div>
                 <div class="members-container">
                     <img src="images/member-3.jpg" alt="Dawn's profile photo" class="profile-image">
@@ -192,6 +195,7 @@
                         <p>Dawn Wood commented on <strong>Facebook's Changes for 2021</strong></p>
                         <p>5 hours ago</p>
                     </div>
+                    <p class="right-align">&gt;</p>
                 </div>
                 <div class="members-container">
                     <img src="images/member-4.jpg" alt="Dan's profile photo" class="profile-image">
@@ -199,10 +203,10 @@
                         <p>Dan Oliver posted <strong>WebApp's SEO Tips</strong></p>
                         <p>1 day ago</p>
                     </div>
+                    <p class="right-align">&gt;</p>
                 </div>
             </section>
-        </div>
-        <div class="mess-set">
+            <!-- <div class="mess-set"> -->
             <section class="message">
                 <h3>MESSAGE USER</h3>
                 <form action="submit" class="widget-container">
@@ -213,7 +217,42 @@
             </section>
             <section class="settings">
                 <h3>SETTINGS</h3>
-                
+                <div class="setting-container">
+                    <p>Send Email Notifications</p>
+                    <label class="switch-light switch-ios" onclick="">                
+                        <input type="checkbox">
+                        <span>
+                        <span>OFF</span>
+                        <span>ON</span>
+                        <a></a>
+                        </span>
+                    </label>
+                </div>
+                <div class="setting-container">
+                    <p>Set Profile to Public</p>
+                    <label class="switch-light switch-ios" onclick="">
+                        <input type="checkbox">
+                        <span>
+                        <span>OFF</span>
+                        <span>ON</span>
+                        <a></a>
+                        </span>
+                    </label>
+                </div>
+                <div class="select-buttons">
+                    <select name="timezone" id="timezone">
+                        <option disabled selected>Select a Timezone</option>
+                        <option value="atlantic">Atlantic</option>
+                        <option value="central">Central</option>
+                        <option value="eastern">Eastern</option>
+                        <option value="pacific">Pacific</option>
+                        <option value="mountain">Mountain</option>
+                    </select>
+                    <div class="buttons">
+                        <button type="submit">SAVE</button>
+                        <button type="submit">CANCEL</button>
+                    </div>
+                </div>
             </section>
         </div>
 

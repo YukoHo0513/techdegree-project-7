@@ -487,6 +487,29 @@ main .dash-header {
     grid-auto-rows: minmax(100px, auto);
   }
 }
+@media (min-width: 1024px) {
+  .final-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "members activity" "message setting";
+  }
+
+  .members {
+    grid-area: members;
+  }
+
+  .activity {
+    grid-area: activity;
+  }
+
+  .message {
+    grid-area: message;
+  }
+
+  .settings {
+    grid-area: setting;
+  }
+}
 /* ============================================= */
 /*                     header                    */
 /* ============================================= */
@@ -621,7 +644,7 @@ section .active {
   }
 
   .mobile .widget-container-half {
-    height: 350px;
+    height: 200px;
     margin: 0 auto;
   }
 }
@@ -659,7 +682,11 @@ section .active {
     padding-top: 0;
   }
   .social-text p:first-child {
-    font-size: 25px;
+    font-size: 18px;
+    margin-top: 19px;
+  }
+  .social-text p:last-child {
+    font-size: 35px;
   }
 
   .social-container {
@@ -668,25 +695,77 @@ section .active {
   }
 }
 /* ============================================= */
-/*             New Members Section               */
+/*         New Members & Activity Section        */
 /* ============================================= */
 .members-container {
   display: block;
+  text-align: center;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: #cccccc solid 1.8px;
+}
+.members-container p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.members-container:last-child {
+  border-bottom: none;
+}
+
+.members-text p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.members-text a {
+  text-decoration: none;
+  color: #7477bf;
+}
+
+.activity p.right-align {
+  display: none;
+  color: #777777;
+  font-size: 25px;
 }
 
 @media (min-width: 768px) {
-  .members-text {
-    margin-top: 0;
-    margin-bottom: 0;
+  .members, .activity {
+    padding-bottom: 0;
   }
 
   .members-container {
     display: flex;
+    justify-content: space-between;
+    border-bottom: #cccccc solid 2.3px;
+  }
+  .members-container .right-align {
+    padding-top: 15px;
+  }
+
+  .members-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+    margin-left: 17px;
+    padding-top: 15px;
+    flex: 1;
+  }
+
+  .activity p.right-align {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  .members {
+    border-right: solid #cccccc 2.3px;
   }
 }
 /* ============================================= */
 /*               Message User                    */
 /* ============================================= */
+.message {
+  padding-bottom: 15px;
+}
 .message input, .message textarea {
   width: 100%;
   background: #f7f7f7;
@@ -708,6 +787,100 @@ section .active {
   border: 2.3px solid #cccccc;
 }
 
+@media (min-width: 1024px) {
+  .message {
+    border-right: solid #cccccc 2.3px;
+  }
+}
+/* ============================================= */
+/*                   Settings                    */
+/* ============================================= */
+.setting-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+.switch-light {
+  width: 30%;
+  margin-top: 9px;
+}
+.switch-light span span {
+  text-align: left;
+  padding-left: 15px;
+}
+
+.switch-ios.switch-light a {
+  width: 21px;
+  height: 21px;
+  border: 1.5px solid #cccccc;
+  top: 2px;
+}
+
+.settings {
+  padding-bottom: 15px;
+}
+.settings select {
+  width: 100%;
+  background: #f7f7f7;
+  border: 2.3px solid #cccccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.settings .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.settings .buttons button {
+  border: #cccccc 2px solid;
+  border-radius: 10px;
+  padding: 10px;
+  width: 48%;
+  color: white;
+}
+.settings .buttons button:first-child {
+  background: #7477bf;
+}
+.settings .buttons button:last-child {
+  background: #999999;
+}
+
+@media (min-width: 768px) {
+  .setting-container {
+    width: 40%;
+    justify-content: space-between;
+  }
+
+  .switch-light {
+    width: 20%;
+  }
+
+  .settings .buttons button {
+    width: 49%;
+  }
+
+  .switch-ios.switch-light a {
+    border: 2px solid #cccccc;
+  }
+}
+@media (min-width: 1024px) {
+  .setting-container {
+    width: initial;
+    padding-bottom: 20px;
+  }
+
+  .settings .buttons button {
+    padding: 15px;
+    border: solid #cccccc 2.3px;
+  }
+  .settings select {
+    padding: 15px;
+  }
+  .settings .select-buttons {
+    margin-top: 92px;
+  }
+}
 /* ============================================= */
 /*                  Navigation                   */
 /* ============================================= */
