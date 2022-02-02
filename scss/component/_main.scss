@@ -250,7 +250,18 @@ section {
         padding-bottom: 15px;
         border: 2.3px solid $border-grey;
     }
-
+    #message-alert {
+        width: 100%;
+        background: #ff5770;
+        color: $white;
+        padding-left: 15px;
+        border-radius: 10px;
+        border: 2.3px solid $border-grey;
+        margin-bottom: 10px;
+    }
+    #message-alert.sent-alert {
+        background: $green-dot;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -319,7 +330,7 @@ section {
         justify-content: space-between;
     }
     .switch-light {
-        width: 20%;
+        width: 30%;
     }
     .settings {
         .buttons button {
@@ -335,6 +346,9 @@ section {
     .setting-container {
         width: initial;
         padding-bottom: 20px;
+    }
+    .switch-light {
+        width: 20%;
     }
     .settings {
         .buttons button {

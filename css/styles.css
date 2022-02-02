@@ -366,7 +366,7 @@ h3 {
 .bell {
   width: 30px;
   height: 30px;
-  padding-right: 10px;
+  margin-right: 10px;
   padding-left: 0;
 }
 
@@ -530,7 +530,41 @@ main .dash-header {
   display: flex;
   align-items: center;
 }
-.head-container .border-left {
+.head-container .head-item #notification {
+  position: relative;
+}
+.head-container .head-item #notification ul {
+  background: #f7f7f7;
+  color: black;
+  padding: 0;
+  width: 200px;
+  position: absolute;
+  right: -100px;
+  top: 30px;
+  box-shadow: 5px 5px 10px 2px #cccccc;
+}
+.head-container .head-item #notification ul .alert-message {
+  border-bottom: #cccccc;
+  list-style-type: none;
+  border-bottom: solid 1.5px #cccccc;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+}
+.head-container .head-item #notification ul .alert-message .alert-item .green-bullet {
+  width: 10px;
+  height: 10px;
+  background: #81c98f;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 3px;
+  margin-right: 2px;
+}
+.head-container .head-item #notification ul .alert-message .x-sign {
+  font-size: 15px;
+}
+.head-container .head-item .border-left {
   border-left: solid 1.5px #cccccc;
   padding-left: 8px;
 }
@@ -545,6 +579,16 @@ main .dash-header {
   }
   .head-container .head-item {
     padding: 15px;
+  }
+  .head-container .head-item #notification ul {
+    width: 350px;
+  }
+  .head-container .head-item #notification ul .alert-message {
+    font-size: 18px;
+    padding: 8px;
+  }
+  .head-container .head-item #notification ul .alert-message .x-sign {
+    font-size: 18px;
   }
   .head-container .border-left {
     padding-left: 15px;
@@ -799,6 +843,18 @@ section .active {
   padding-bottom: 15px;
   border: 2.3px solid #cccccc;
 }
+.message #message-alert {
+  width: 100%;
+  background: #ff5770;
+  color: white;
+  padding-left: 15px;
+  border-radius: 10px;
+  border: 2.3px solid #cccccc;
+  margin-bottom: 10px;
+}
+.message #message-alert.sent-alert {
+  background: #81c98f;
+}
 
 @media (min-width: 1024px) {
   .message {
@@ -866,7 +922,7 @@ section .active {
   }
 
   .switch-light {
-    width: 20%;
+    width: 30%;
   }
 
   .settings .buttons button {
@@ -881,6 +937,10 @@ section .active {
   .setting-container {
     width: initial;
     padding-bottom: 20px;
+  }
+
+  .switch-light {
+    width: 20%;
   }
 
   .settings .buttons button {

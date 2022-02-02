@@ -17,12 +17,47 @@
         padding: 9px;
         display: flex;
         align-items: center;
+        #notification {
+            position: relative;
+            ul {
+                background: $bg-color;
+                color: black;
+                padding: 0;
+                width: 200px;
+                position: absolute;
+                right: -100px;
+                top: 30px;
+                box-shadow: 5px 5px 10px 2px $border-grey;
+                .alert-message {
+                    border-bottom: $border-grey;
+                    list-style-type: none;
+                    border-bottom: solid 1.5px $border-grey;
+                    padding: 5px;
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 11px;
+                    .alert-item {
+                        .green-bullet {
+                            width: 10px;
+                            height: 10px;
+                            background: $green-dot;
+                            border-radius: 50%;
+                            display: inline-block;
+                            margin-top: 3px;
+                            margin-right: 2px;
+                        }
+                    }
+                    .x-sign {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .border-left {
+            border-left: solid 1.5px $border-grey;
+            padding-left: 8px;
+        }
     }
-    .border-left {
-        border-left: solid 1.5px $border-grey;
-        padding-left: 8px;
-    }
-
 }
 
 @media (min-width: 768px) {
@@ -36,9 +71,22 @@
         }
         .head-item {
             padding: 15px;
+            #notification {
+                ul {
+                    width: 350px;
+                    .alert-message {
+                        font-size: 18px;
+                        padding: 8px;
+                        .x-sign {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
         }
         .border-left {
             padding-left: 15px;
         }
     }
 }
+
