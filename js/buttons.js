@@ -26,7 +26,6 @@ function setSavedEmail() {
 }
 function getEmailCheck() {
     const emailInStorage = localStorage.getItem('selectedEmail');
-    console.log(emailInStorage);
     if (emailInStorage === "true") {
         checkEmail.checked = "checked";
     } else if (emailInStorage === "false") {
@@ -40,8 +39,6 @@ function setSavedProfile() {
 }
 function getProfileCheck() {
     const profileInStorage = localStorage.getItem('selectedProfile');
-    console.log(profileInStorage);
-
     if (profileInStorage === "true") {
         checkProfile.checked = "checked";
     } else if (profileInStorage === "false") {

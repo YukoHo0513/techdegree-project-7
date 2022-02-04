@@ -829,7 +829,10 @@ section .active {
 .message {
   padding-bottom: 15px;
 }
-.message input, .message textarea {
+.message .widget-container {
+  position: relative;
+}
+.message .widget-container input, .message .widget-container textarea {
   width: 100%;
   background: #f7f7f7;
   border: 2.3px solid #cccccc;
@@ -837,10 +840,10 @@ section .active {
   margin-bottom: 10px;
   padding: 15px;
 }
-.message input::placeholder, .message textarea::placeholder {
+.message .widget-container input::placeholder, .message .widget-container textarea::placeholder {
   color: #cccccc;
 }
-.message button {
+.message .widget-container button {
   width: 100%;
   background: #7477bf;
   color: white;
@@ -848,6 +851,20 @@ section .active {
   padding-top: 15px;
   padding-bottom: 15px;
   border: 2.3px solid #cccccc;
+}
+.message .widget-container #search-ul {
+  position: absolute;
+  top: 52px;
+  list-style: none;
+  margin-top: 0;
+  width: 100%;
+  padding-left: 0;
+}
+.message .widget-container #search-ul .user-style {
+  background: pink;
+  border: 2px #cccccc solid;
+  border-radius: 10px;
+  padding: 5px;
 }
 .message #message-alert {
   width: 100%;
