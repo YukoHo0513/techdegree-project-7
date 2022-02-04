@@ -7,7 +7,6 @@ bell.addEventListener('click', (e)=> {
 
     if (alertMessageList.textContent === "") {
         greenDot.style.display = "none";
-
         alertMessageList.innerHTML = 
             `<ul>
                 <li class="alert-message li-1">
@@ -34,10 +33,7 @@ bell.addEventListener('click', (e)=> {
             </ul>`;
     } 
     else {
-        console.log(e.target);
         if (e.target.parentElement === bell || e.target.id === "notification") {
-            console.log();
-
             alertMessageList.innerHTML = "";
         }
     }

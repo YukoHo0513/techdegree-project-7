@@ -373,6 +373,7 @@ h3 {
 
 .bell:hover {
   transform: rotate(45deg) scale(1);
+  cursor: pointer;
 }
 
 .bell-outline {
@@ -634,6 +635,9 @@ main .alert .alert-banner {
   display: flex;
   justify-content: space-between;
 }
+main .alert .alert-banner .alert-banner-close {
+  cursor: pointer;
+}
 
 @media (min-width: 768px) {
   main .grey-tab {
@@ -851,6 +855,7 @@ section .active {
   padding-top: 15px;
   padding-bottom: 15px;
   border: 2.3px solid #cccccc;
+  cursor: pointer;
 }
 .message .widget-container #search-ul {
   position: absolute;
@@ -861,7 +866,7 @@ section .active {
   padding-left: 0;
 }
 .message .widget-container #search-ul .user-style {
-  background: pink;
+  background: papayawhip;
   border: 2px #cccccc solid;
   border-radius: 10px;
   padding: 5px;
@@ -900,6 +905,7 @@ section .active {
 .switch-light span span {
   text-align: left;
   padding-left: 15px;
+  cursor: pointer;
 }
 
 .switch-ios.switch-light a {
@@ -919,6 +925,7 @@ section .active {
   border-radius: 10px;
   margin-bottom: 10px;
   padding: 10px;
+  cursor: pointer;
 }
 .settings .buttons {
   display: flex;
@@ -930,6 +937,7 @@ section .active {
   padding: 10px;
   width: 48%;
   color: white;
+  cursor: pointer;
 }
 .settings .buttons button:first-child {
   background: #7477bf;

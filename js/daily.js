@@ -1,23 +1,12 @@
+const purple = 'rgba(116, 119, 191, 1)'
 const dailyData = {
   datasets: [{
     data: [{x:'S', y:75}, {x:'M', y:115}, {x:'T', y:175}, {x:'W', y:135}, {x:'T ', y:225}, {x:'F', y:200}, {x:'S ', y:100}],
     backgroundColor: [
-      'rgba(116, 119, 191, 1)',
-      'rgba(116, 119, 191, 1)',
-      'rgba(116, 119, 191, 1)',
-      'rgba(116, 119, 191, 1)',
-      'rgba(116, 119, 191, 1)',
-      'rgba(116, 119, 191, 1)',
-      'rgba(116, 119, 191, 1)'
+      purple, purple, purple, purple, purple, purple, purple
     ],
     borderColor: [
-      'rgba(116, 119, 191, 1)',
-      'rgba(116, 119, 191, 1)',
-      'rgba(116, 119, 191, 1)',
-      'rgba(116, 119, 191, 1)',
-      'rgba(116, 119, 191, 1)',
-      'rgba(116, 119, 191, 1)',
-      'rgba(116, 119, 191, 1)'
+      purple, purple, purple, purple, purple, purple, purple
     ],
     borderWidth: 1
   }]

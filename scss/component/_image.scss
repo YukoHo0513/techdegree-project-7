@@ -11,6 +11,7 @@
 }
 .bell:hover {
     transform: rotate(45deg) scale(1);
+    cursor: pointer;
 }
 .bell-outline {
     fill: $white;

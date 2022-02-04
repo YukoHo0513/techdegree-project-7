@@ -13,5 +13,7 @@ button.addEventListener('click', (e)=> {
         inputContainer.innerHTML = '<div id="message-alert"><p><strong>Alert</strong>: Message field must be filled out</p></div>'
     } else {
         inputContainer.innerHTML = '<div id="message-alert" class="sent-alert"><p><strong>Alert</strong>: Message was sent</p></div>';
+        user.value = "";
+        message.value = "";
     }
 });
