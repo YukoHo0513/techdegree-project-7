@@ -368,6 +368,11 @@ h3 {
   height: 30px;
   margin-right: 10px;
   padding-left: 0;
+  transition: transform 0.4s ease-out;
+}
+
+.bell:hover {
+  transform: rotate(45deg) scale(1);
 }
 
 .bell-outline {
@@ -563,6 +568,7 @@ main .dash-header {
 }
 .head-container .head-item #notification ul .alert-message .x-sign {
   font-size: 15px;
+  cursor: pointer;
 }
 .head-container .head-item .border-left {
   border-left: solid 1.5px #cccccc;
