@@ -16,6 +16,9 @@ searchInput.addEventListener('keyup', (e)=> {
             membersLi.className = "user-style";
             membersLi.appendChild(membersContent);
             searchUl.appendChild(membersLi);
+            if (typedChars === membersArr[i]) {
+                searchUl.style.display = "none";
+            }
         } 
     }
     if (e.target.value === "") {
